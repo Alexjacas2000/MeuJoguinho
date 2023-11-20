@@ -1,0 +1,66 @@
+body{
+  background-color: rgb(147,112,219);
+  font-family: roboto;
+  color: #d3d5f0;
+  margin: 20px;
+}
+
+.Regras{
+  display: grid;
+  grid-column: 1;
+  grid-row: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.Conteiner{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  margin: auto;
+  background-color: rgba(35,35,142,0.85);
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 1.25em;
+}
+
+.nomes{
+  display: flex;
+  justify-content: center;
+}
+
+#pontuacao, #acertos, #erros{
+  color: black;
+}
+.Palpite{
+  display: flex;
+}
+.Resultado{
+  align-items: center;
+}
+
+.Fim{
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+button{
+  background: rgb(10,200,80);
+  border-style: outset;
+  border-color: rgba(10,200,80,0.5);
+  border-radius: 20px;
+  width: 75%;
+  min-width: 80px;
+  font-style: bold;
+}
+button:hover{
+  background: rgb(230,120,0);
+  color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 5px #eee;
+}
+#fim{
+  width: 100%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <title>Joguinho meu</title>
+  </head>
+  <body>
+
+    <div class="Regras">
+      <h1>Seja bem vindo ao meu joguinho!</h1>
+      <h2>As regras são simples:</h2>
+      <ul>
+        <li>Objetivo primario: Descubra o número oculto</li>
+        <li>Você terá algumas tentativas para isso, que dependerá da sua pontuação atual.</li>
+        <li>Você começará com 50 pontos, cada tentativa você irá gastar 5 pontos.</li>
+        <li>Quando você acertar o número oculto você receberá uma pontuação como recompensa.</li>
+        <li>Essa recompensa será calculada usando diverssos fatores ok? então nem sempre será a mesma.</li>
+        <li>Você podera pular um número caso ache que não vale a pena jogar aquela rodada por 50 pontos.</li>
+        <li>Objetivo final: Faça a maior pontuação que conseguir e desafie seus amigos a te superar se foram capasses!</li>
+    </ul>
+    </div>
+
+    <div class="Conteiner" id="PRIMEIRO">
+      <h2 class="nomes">Pontuação: <div id="pontuacao">0000</div></h2>
+      <h2 class="nomes">Acertos: <div id="acertos">0000</div></h2>
+      <h2 class="nomes">Erros: <div id="erros">0000</div></h2>
+    </div>
+    <div class="Conteiner" id="SEGUNDO">
+      <div class="Palpite">
+        <label for="txtpalpite"> Palpite: </label>
+        <input id="txtpalpite" />
+        <button type="button" onclick="jogar()">VERIFICAR</button>
+      </div>
+      <div class="Resultado">
+        <div class="result"> Resultado: </div>
+        <div id="txtresultado">Resultado</div>
+      </div>
+      <div class="Pular">
+        <button type="button" onclick="pular()">PULAR</button>
+      </div>
+    </div>
+    <div class="Fim">
+        <button type="button" onclick="finalizar()" >FINALIZAR</button>
+    </div>
+
+
+  </body>
+</html>
